@@ -10,7 +10,7 @@ function select_thumb(element) {
   size = element.attr('href').split('_')[1];
   element.closest('li').removeClass("selected")
   img = element.closest('li').find("img");
-	src = img.attr("src").replace('original', size); 
+	src = img.attr("src").replace('thumb', size);
 	curbly_insert_image(src, img.attr('alt') );
 }
 
